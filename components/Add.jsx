@@ -38,7 +38,7 @@ const handleCreate = async () => {
     const newProduct = {
       title, desc, prices, extraOptions, img: url
     };
-    await axios.post("http://localhost:3000/api/products", newProduct)
+    await axios.post("https://pizza-boy.vercel.app/api/products", newProduct)
     setClose(true);
   
   } 

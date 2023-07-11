@@ -95,7 +95,7 @@ const statusClass = (index) => {
 };
 
 export async function getServerSideProps({ params }) {
-    const response = await fetch(`http://localhost:3000/api/orders/${params.id}`);
+    const response = await fetch(`https://pizza-boy.vercel.app/api/orders/${params.id}`);
     const order = await response.json();
     
     return {
