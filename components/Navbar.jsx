@@ -32,6 +32,7 @@ const Navbar = () => {
           <div className={styles.text}>ORDER</div>
           <div className={styles.text}>407-745-9097</div>
         </div>
+        <div className={styles.mobilePageTitle}>Pizza Boy</div>
       </div>
       <div className={styles.item}>
         <ul className={`${styles.list} ${showMenu ? styles.show : ""}`}>

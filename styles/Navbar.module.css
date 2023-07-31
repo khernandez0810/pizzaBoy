@@ -163,5 +163,18 @@
 .toggleMenu:focus {
     outline:none;
 }
+.texts {
+    display: none;
+}
+.mobilePageTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: White;
+    font-size: 20px;
+    padding: 25px;
+    margin-left: 60px;
+}
 
 }
