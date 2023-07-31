@@ -10,7 +10,7 @@ const login = () => {
 
     const handleClick = async () => {
             try {
-                await axios.post("https://pizza-boy.vercel.app/api/login", {username, password})
+                await axios.post("http://localhost:3000/api/login", {username, password})
                 router.push('/admin')
             } catch (error) {
                 console.log(error);

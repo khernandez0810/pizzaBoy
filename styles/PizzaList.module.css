@@ -9,6 +9,9 @@
     font-size: 24px;
     color: #444;
     width: 70%;
+    text-align: center;
+    color:white;
+    margin: 20px 0;
 }
 .wrapper {
     display: flex;
@@ -18,7 +21,7 @@
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .title{
         text-align: center;
     }

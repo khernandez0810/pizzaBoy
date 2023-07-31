@@ -1,0 +1,18 @@
+.container {
+    height: calc(100vh - 100px);
+    background: black;
+    overflow: hidden;
+    position: relative;
+}
+
+.wrapper {
+padding-top:300px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.logo {
+    font-size: 50px;
+    padding:50px
+}

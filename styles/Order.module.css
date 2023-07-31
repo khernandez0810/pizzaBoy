@@ -5,13 +5,15 @@
 }
 
 .left{
-    flex:2
+    flex:2;
+    color: black
 }
 
 .table {
     width: 100%;
     text-align: left;
     margin-bottom: 50px;
+    
 }
 
 .row:last-child {

@@ -1,7 +1,7 @@
 .container {
     height: 100px;
     padding: 0px 50px;
-    background-color: #d1411e ;
+    background-color: black ;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,7 +11,21 @@
     top: 0;
     left: 0;
     right: 0;
+    margin-bottom: 15px;
     
+}
+.pageTitle {
+    color: White;
+    font-size: 35px;
+    background-color: wheat;
+    border-radius:50%;
+    padding: 25px
+}
+.active {
+    margin: 20px;
+    font-weight: 500;
+    font-size: 25px;
+    color:red 
 }
 
 .item {
@@ -43,7 +57,7 @@
 }
 
 .text:first-child{
-    font-size: 12px;
+    font-size: 17px;
     font-weight: 500;
 }
 
@@ -57,15 +71,37 @@
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     list-style: none;
     color: white;
-    width: 80%;
-}
-.listItem {
+    width: 70%;
+  }
+  
+  .listItem {
     margin: 20px;
     font-weight: 500;
-}
+    font-size: 25px;
+  }
+  
+  .listItem:hover {
+    color: red;
+    transition: 0.1s;
+  }
+  
+  
+  .list.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-color: black;
+    z-index: 998;
+    padding: 20px;
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+  }
 
 
 .cart {
@@ -88,18 +124,44 @@
     font-weight: bold;
 }
 
+.toggleMenu {
+    display:none;
+}
 
-@media screen and (max-width:480px) {
-    .item:nth-child(2){
-        display: none;
-    }
+
+@media screen and (max-width:768px) {
+.list {
+    display: none;
+}
 
     .item:nth-child(1){
         flex:3;
     }
 
+.toggleMenu {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    margin-right: 15px;
+    width: 30px;
+}
 
-
-
+.pageTitle {
+    display: none;
+}
+.callButton {
+    display: none;
+}
+.texts {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+.toggleMenu:focus {
+    outline:none;
+}
 
 }

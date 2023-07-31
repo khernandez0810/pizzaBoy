@@ -82,7 +82,7 @@ const Product = ( {pizza} ) => {
 }
 
 export async function getServerSideProps({params}) {
-    const response = await fetch(`https://pizza-boy.vercel.app/api/products/${params.id}`);
+    const response = await fetch(`http://localhost:3000/api/products/${params.id}`);
     const pizza = await response.json();
     return {
       props: {

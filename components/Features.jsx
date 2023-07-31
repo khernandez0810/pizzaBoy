@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from "../styles/Features.module.css"
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 const Features = () => {
     const [index, setIndex] = useState(0)
     const images = [
@@ -19,6 +19,21 @@ const Features = () => {
         }
         console.log(index)
     }
+
+    useEffect(() => {
+        const switchImage = () => {
+            setIndex((prevIndex) => (prevIndex !== images.length -1 ? prevIndex + 1 : 0));
+        };
+
+        const timer = setInterval(switchImage, 3000);
+
+        return () => clearInterval(timer);
+    }, []);
+
+
+
+
+
   return (
     <div className={styles.container}>
         <div className={styles.arrowContainer} style={{ left:0 }} onClick={() => handleArrow('l')}>
