@@ -24,6 +24,7 @@
     "mongodb": "^5.7.0",
     "mongoose": "^7.3.2",
     "next": "^13.4.8",
+    "node": "^25.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-fontawesome": "^1.7.1",
